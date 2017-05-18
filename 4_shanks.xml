@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<resourses>
+	<circles> 
+<!-- format: number, x, y, vx, vy, mass, radius, dissipation factor -->
+		<circle>0 150 250 0.5 0 30 15 0.0003</circle> 
+		<circle>1 350 250 0.5 0 30 15 0.00003</circle>
+		<circle>2 550 250 0.5 0 30 15 0.00003</circle>
+		<circle>3 750 250 0.5 0 30 15 0.00003</circle>
+	</circles>
+
+	<springs>
+<!-- type "free_both" format: circle1, circle2, rate -->
+		<spring type="free_both">0 1 0.01</spring>
+		<spring type="free_both">1 2 0.01</spring>
+		<spring type="free_both">2 3 0.01</spring>
+<!-- type "free_begin" format: circle1, xEnd, yEnd, rate --> 
+<!-- type "free_end" format: circle2, x, y, rate --> 
+	</springs>
+
+	<shanks>
+<!-- type "free_both" format: circle1, circle2 -->
+<!-- type "free_begin" format: circle1, xEnd, yEnd -->
+ 		<shank type="free_begin">0 150 0 </shank>
+		<shank type="free_begin">1 350 0 </shank>
+		<shank type="free_begin">2 550 0 </shank>
+		<shank type="free_begin">3 750 0 </shank>
+<!-- type "free_end" format: circle2, x, y -->
+	</shanks>
+</resourses>
+
+
+
